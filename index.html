@@ -988,49 +988,51 @@
                     <span>Inizia il Tuo Percorso</span>
                 </div>
                 <h2 class="section-title mb-5">Prenota il Tuo Appuntamento</h2>
-                <form class="appointment-form" data-aos="fade-up">
+                <form class="appointment-form" data-aos="fade-up" action="https://formsubmit.co/deoliveira.erick@gmail.com" method="POST">
                     <div class="form-row">
                         <div class="form-group">
                             <label class="form-label">Nome</label>
-                            <input type="text" class="form-control" placeholder="Il tuo nome">
+                            <input type="text" name="nome" class="form-control" placeholder="Il tuo nome">
                         </div>
                         <div class="form-group">
                             <label class="form-label">Cognome</label>
-                            <input type="text" class="form-control" placeholder="Il tuo cognome">
+                            <input type="text" name="cognome" class="form-control" placeholder="Il tuo cognome">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="La tua email">
+                            <input type="email" name="email" class="form-control" placeholder="La tua email">
                         </div>
                         <div class="form-group">
                             <label class="form-label">Telefono</label>
-                            <input type="tel" class="form-control" placeholder="Il tuo numero">
+                            <input type="tel"  name="telefono" class="form-control" placeholder="Il tuo numero">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label class="form-label">Servizio</label>
-                            <select class="form-control">
+                            <select class="form-control"  name="opzione">
                                 <option value="">Seleziona un servizio</option>
-                                <option value="traditional">Shiatsu Tradizionale</option>
-                                <option value="relaxing">Shiatsu Rilassante</option>
-                                <option value="energetic">Shiatsu Energetico</option>
-                                <option value="prenatal">Shiatsu Prenatale</option>
-                                <option value="sports">Shiatsu Sportivo</option>
-                                <option value="consultation">Consulenza Energetica</option>
+                                <option value="tradizionale">Shiatsu Tradizionale</option>
+                                <option value="rilassante">Shiatsu Rilassante</option>
+                                <option value="energetico">Shiatsu Energetico</option>
+                                <option value="prenatale">Shiatsu Prenatale</option>
+                                <option value="sportivo">Shiatsu Sportivo</option>
+                                <option value="consulenza">Consulenza Energetica</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Data Preferita</label>
-                            <input type="date" class="form-control">
+                            <input type="date"  name="data" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="form-label">Messaggio (Opzionale)</label>
-                        <textarea class="form-control" rows="4" placeholder="Descrivi brevemente le tue esigenze..."></textarea>
+                        <textarea class="form-control" name="messaggio" rows="4" placeholder="Descrivi brevemente le tue esigenze..."></textarea>
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
                     <button type="submit" class="btn-submit">
                         Conferma Prenotazione
                         <i class="bi bi-arrow-right ms-2"></i>

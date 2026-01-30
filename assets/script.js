@@ -61,12 +61,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form submission
-document.querySelector('.appointment-form').addEventListener('submit', function (e) {
-    e.preventDefault();
+// document.querySelector('.appointment-form').addEventListener('submit', function (e) {
+//    e.preventDefault();
     // Add form submission logic here
-    alert('Grazie per la tua prenotazione! Ti contatteremo presto per confermare.');
-    this.reset();
-});
+//    alert('Grazie per la tua prenotazione! Ti contatteremo presto per confermare.');
+//    this.reset();
+// }); 
 
 // Navbar collapse on mobile after click
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
