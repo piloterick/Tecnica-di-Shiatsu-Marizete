@@ -217,8 +217,9 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
-    opacity: 0.08;
+    background: url("/assets/img/banner.jpg");
+    /* background: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover; */
+    opacity: 0.08; 
 }
 
 .hero-decoration {
@@ -994,6 +995,7 @@ h6 {
     padding: 120px 0;
     overflow: hidden;
     position: relative;
+    margin-left: 20px;
 }
 
 .reviews-section::before,
@@ -1007,6 +1009,8 @@ h6 {
     pointer-events: none;
 }
 
+/* 
+
 .reviews-section::before {
     left: 0;
     background: linear-gradient(to right, var(--light), transparent);
@@ -1016,6 +1020,8 @@ h6 {
     right: 0;
     background: linear-gradient(to left, var(--light), transparent);
 }
+
+*/
 
 .marquee-wrapper {
     margin-top: 60px;
@@ -1027,9 +1033,11 @@ h6 {
     margin-bottom: 30px;
 }
 
+/* 
 .marquee-row-1 {
     animation: marquee-left 40s linear infinite;
 }
+*/
 
 .marquee-row-2 {
     animation: marquee-right 40s linear infinite;
@@ -1592,6 +1600,14 @@ h6 {
 }
 
 @media (max-width: 767px) {
+    .top-bar-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin: 5px auto;
+        gap: 0;
+    }
+
     .hero-section {
         padding: 8rem 0;
     }
