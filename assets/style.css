@@ -2226,10 +2226,12 @@ h6 {
     .whatsapp-float {
         right: max(12px, env(safe-area-inset-right));
         bottom: max(70px, calc(60px + env(safe-area-inset-bottom)));
+        margin-right: 10px;
     }
     
     .back-to-top {
         right: max(12px, env(safe-area-inset-right));
         bottom: max(12px, env(safe-area-inset-bottom));
+        margin-right: 15px;
     }
 }
