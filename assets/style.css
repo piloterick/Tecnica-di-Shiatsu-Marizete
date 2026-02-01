@@ -1734,7 +1734,7 @@ h6 {
     height: 100%;
     border-radius: 50%;
     background: rgba(37, 211, 102, 0.4);
-    animation: whatsappPulse 2s infinite;
+    animation: whatsappPulse 1s infinite;
     pointer-events: none;
 }
 
