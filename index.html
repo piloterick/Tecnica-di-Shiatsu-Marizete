@@ -1334,13 +1334,22 @@
         <i class="bi bi-arrow-up"></i>
     </a>
 
-    <!-- WhatsApp Floating Button - Metti DOPO il back-to-top button -->
-    <a href="https://wa.me/393664932878?text=Ciao%20Marizete!%20Vorrei%20informazioni%20sui%20trattamenti%20Shiatsu."
-        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp"
-        id="whatsappBtn">
-        <i class="bi bi-whatsapp"></i>
-        <span class="whatsapp-tooltip">Chatta con noi!</span>
-    </a>
+    <!-- WhatsApp Floating Button (positioned above back-to-top) -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <div class="whatsapp-tooltip" id="whatsappTooltip">
+            <span class="tooltip-text">Prenota ora il tuo trattamento Shiatsu!</span>
+            <button class="tooltip-close" id="tooltipClose" aria-label="Chiudi">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <a href="https://wa.me/393664932878?text=Ciao%20Marizete!%20Vorrei%20informazioni%20sui%20trattamenti%20Shiatsu."
+            class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span class="whatsapp-pulse"></span>
+        </a>
+    </div>
+
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
