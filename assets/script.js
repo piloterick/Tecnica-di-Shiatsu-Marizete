@@ -79,3 +79,19 @@ navLinks.forEach(link => {
         }
     });
 });
+
+// WhatsApp button - mostra dopo scroll
+const whatsappBtn = document.querySelector('.whatsapp-float');
+
+if (whatsappBtn) {
+    
+    window.addEventListener('scroll', throttle(function() {
+        if (window.scrollY > 300) {
+            whatsappBtn.style.opacity = '1';
+            whatsappBtn.style.visibility = 'visible';
+        } else {
+            whatsappBtn.style.opacity = '0';
+            whatsappBtn.style.visibility = 'hidden';
+        }
+    }, 100));
+}
